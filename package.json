@@ -2,7 +2,6 @@
   "name": "solid-quality",
   "version": "0.0.0",
   "description": "",
-  "type": "module",
   "scripts": {
     "build": "NODE_ENV=production vite build",
     "check-updates": "ncu",
@@ -63,6 +62,7 @@
     "vitest": "^0.25.1"
   },
   "dependencies": {
+    "@solidjs/router": "^0.5.0",
     "@suid/icons-material": "^0.4.1",
     "@suid/material": "^0.6.3",
     "solid-js": "^1.6.2",

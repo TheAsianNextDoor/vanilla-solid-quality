@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@playwright/test': ^1.27.1
+  '@solidjs/router': ^0.5.0
   '@suid/icons-material': ^0.4.1
   '@suid/material': ^0.6.3
   '@suid/vite-plugin': ^0.0.3
@@ -46,6 +47,7 @@ specifiers:
   zod: ^3.19.1
 
 dependencies:
+  '@solidjs/router': 0.5.0_solid-js@1.6.2
   '@suid/icons-material': 0.4.1_solid-js@1.6.2
   '@suid/material': 0.6.3_solid-js@1.6.2
   solid-js: 1.6.2
@@ -752,6 +754,14 @@ packages:
     resolution: {integrity: sha512-CX6t4SYQ37lzxicAqsBtxA3OseeoVrh9cSJ5PFYam0GksYlupRfy1A+Q4aYD3zvcfECLc0zO2u+ZnR2UYKvCrw==}
     engines: {node: '>=14.16'}
     dev: true
+
+  /@solidjs/router/0.5.0_solid-js@1.6.2:
+    resolution: {integrity: sha512-rNR07l21tWWDVmCbaapggB89rEX7jlM2XChpTLqEGEnj46LzVZ8zgvjcF6NNKScByAlLpoQUkVIjB2KHpcMi+w==}
+    peerDependencies:
+      solid-js: ^1.5.3
+    dependencies:
+      solid-js: 1.6.2
+    dev: false
 
   /@suid/base/0.3.2_solid-js@1.6.2:
     resolution: {integrity: sha512-uRigKjiSRYaDBdLY/raxIrk0qHCgx1Bx34z6cP6HY2RgeZxAz09/z2Ii4nhwyI2xGRTbNRbt7yJcACBU6/4J6w==}
