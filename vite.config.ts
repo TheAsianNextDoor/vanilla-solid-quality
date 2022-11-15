@@ -17,6 +17,7 @@ export default defineConfig({
     emptyOutDir: true,
     outDir: path.join(__dirname, 'dist'),
   },
+  optimizeDeps: { extensions: ['jsx'], exclude: ['@suid/material', '@suid/icons-material'] },
   plugins: [
     suidPlugin(),
     solid(),

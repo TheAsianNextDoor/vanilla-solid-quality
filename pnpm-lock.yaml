@@ -7,6 +7,7 @@ specifiers:
   '@suid/material': ^0.6.3
   '@suid/vite-plugin': ^0.0.3
   '@testing-library/jest-dom': ^5.16.5
+  '@thisbeyond/solid-dnd': ^0.7.3
   '@types/babel__core': ^7.1.20
   '@types/eslint': ^8.4.10
   '@types/testing-library__jest-dom': ^5.14.5
@@ -50,6 +51,7 @@ dependencies:
   '@solidjs/router': 0.5.0_solid-js@1.6.2
   '@suid/icons-material': 0.4.1_solid-js@1.6.2
   '@suid/material': 0.6.3_solid-js@1.6.2
+  '@thisbeyond/solid-dnd': 0.7.3_solid-js@1.6.2
   solid-js: 1.6.2
   zod: 3.19.1
 
@@ -901,6 +903,14 @@ packages:
       redent: 3.0.0
     dev: true
 
+  /@thisbeyond/solid-dnd/0.7.3_solid-js@1.6.2:
+    resolution: {integrity: sha512-mX9AE//jyNm9bz9+w60LPukMJ8nkYrUh+RPm8E5SiFdmSI8EoP1hhNgDHFTHbxauoAMLFosi1QBwpgeg/XijDQ==}
+    peerDependencies:
+      solid-js: ^1.5
+    dependencies:
+      solid-js: 1.6.2
+    dev: false
+
   /@tootallnate/once/2.0.0:
     resolution: {integrity: sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==}
     engines: {node: '>= 10'}
@@ -1428,8 +1438,8 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /babel-plugin-jsx-dom-expressions/0.33.12_@babel+core@7.18.6:
-    resolution: {integrity: sha512-FQeNcBvC+PrPYGpeUztI7AiiAqJL2H8e7mL4L6qHZ7B4wZfbgyREsHZwKmmDqxAehlyAUolTdhDNk9xfyHdIZw==}
+  /babel-plugin-jsx-dom-expressions/0.35.4_@babel+core@7.18.6:
+    resolution: {integrity: sha512-Ab8W+36+XcNpyb644K537MtuhZRssgE3hmZD/08a1Z99Xfnd38tR2BZaDl7yEQvvHrb46N+eje2YjIg4VGAfVQ==}
     peerDependencies:
       '@babel/core': ^7.0.0
     dependencies:
@@ -1440,13 +1450,13 @@ packages:
       html-entities: 2.3.2
     dev: true
 
-  /babel-preset-solid/1.4.6_@babel+core@7.18.6:
-    resolution: {integrity: sha512-5n+nm1zgj7BK9cv0kYu0p+kbsXgGbrxLmA5bv5WT0V5WnqRgshWILInPWLJNZbvP5gBj+huDKwk3J4RhhbFlhA==}
+  /babel-preset-solid/1.6.2_@babel+core@7.18.6:
+    resolution: {integrity: sha512-5sFI34g7Jtp4r04YFWkuC1o+gnekBdPXQTJb5/6lmxi5YwzazVgKAXRwEAToC3zRaPyIYJbZUVLpOi5mDzPEuw==}
     peerDependencies:
       '@babel/core': ^7.0.0
     dependencies:
       '@babel/core': 7.18.6
-      babel-plugin-jsx-dom-expressions: 0.33.12_@babel+core@7.18.6
+      babel-plugin-jsx-dom-expressions: 0.35.4_@babel+core@7.18.6
     dev: true
 
   /balanced-match/1.0.2:
@@ -6077,7 +6087,7 @@ packages:
     dependencies:
       '@babel/core': 7.18.6
       '@babel/preset-typescript': 7.18.6_@babel+core@7.18.6
-      babel-preset-solid: 1.4.6_@babel+core@7.18.6
+      babel-preset-solid: 1.6.2_@babel+core@7.18.6
       merge-anything: 5.0.2
       solid-js: 1.6.2
       solid-refresh: 0.4.1_solid-js@1.6.2
