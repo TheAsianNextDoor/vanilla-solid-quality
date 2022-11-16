@@ -11,7 +11,9 @@ const lazyImport = (fileImport: Promise<any>, componentName: string) => {
 const Dashboard = lazyImport(import('./pages/dashboard/dashboard'), 'Dashboard');
 const Login = lazyImport(import('./pages/login/login'), 'Login');
 const Template = lazyImport(import('./pages/template/template'), 'Template');
-const TemplateEdit = lazyImport(import('./pages/template/template-edit'), 'TemplateEdit');
+const TemplateEdit = lazyImport(import('./pages/template/edit/template-edit'), 'TemplateEdit');
+const Inspection = lazyImport(import('./pages/inspection/inspection'), 'Inspection');
+const InspectionEdit = lazyImport(import('./pages/inspection/edit/inspection-edit'), 'InspectionEdit');
 
 export const RouteContainer = () => {
   return (
@@ -23,6 +25,12 @@ export const RouteContainer = () => {
           <Route path="template">
             <Route path="/" element={Template} />
             <Route path="/:id" element={TemplateEdit} />
+          </Route>
+          <Route path="inspection">
+            <Route path="/:id">
+              <Route path="/" element={Inspection} />
+              <Route path="edit" element={InspectionEdit} />
+            </Route>
           </Route>
         </Route>
 

@@ -11,8 +11,8 @@ import {
 } from '@thisbeyond/solid-dnd';
 import { Component, createSignal, For } from 'solid-js';
 
-import { Checkbox, TextField } from '../../common/components';
-import { AttributeType, Item, ItemType } from '../../features/template-list/template-store';
+import { Checkbox, TextField } from '../../../common/components';
+import { AttributeType, Item, ItemType } from '../../../features/template-list/template-store';
 
 const convertItemToComponent = (item: Item) => {
   const { itemType } = item;
